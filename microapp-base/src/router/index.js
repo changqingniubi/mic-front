@@ -14,6 +14,16 @@ const routes = [
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   }
+  // {
+  //   path: '/app-vue/*/*',
+  //   name: 'VueMain',
+  //   component: () => import(/* webpackChunkName: "VueMain" */ '../views/VueMain.vue')
+  // },
+  // {
+  //   path: '/app-react',
+  //   name: 'ReactMain',
+  //   component: () => import(/* webpackChunkName: "ReactMain" */ '../views/ReactMain.vue')
+  // }
 ]
 
 const router = new VueRouter({

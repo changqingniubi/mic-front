@@ -7,8 +7,9 @@
       <router-link to="/app-react">react应用</router-link>
     </div>
     <router-view/>
-    <div id="vue"></div>
-    <div id='react'></div>
+    <div id="container">
+
+    </div>
   </div>
 </template>
 
