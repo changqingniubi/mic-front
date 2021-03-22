@@ -8,7 +8,7 @@ export default [
   },
   {
     name: 'appVue',
-    entry: '//localhost:8081',
+    entry: '//localhost:10000',
     container: '#container',
     activeRule: getActiveRule('/app-vue')
   }

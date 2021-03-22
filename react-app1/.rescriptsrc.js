@@ -6,12 +6,12 @@ module.exports = {
     config.output.libraryTarget = 'umd';
     config.output.globalObject = 'window';
     config.output.jsonpFunction = `webpackJsonp_appReact`;
+    config.output.publicPath = 'http://localhost:3000/'
     return config;
   },
 
   devServer: _ => {
     const config = _;
-
     config.headers = {
       'Access-Control-Allow-Origin': '*',
     };

@@ -1,8 +1,9 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch,Link,Redirect} from 'react-router-dom';
+import lazyLoad from '../common/lazyLoad'
 import Home from '../components/home';
-import Mine from '../components/mine';
-
+//import Mine from '../components/mine';
+const Mine = lazyLoad(() => import( /* webpackChunkName: "mine" */ '../components/mine'));
 
 const BasicRoute = () => (
     <BrowserRouter basename={window.__POWERED_BY_QIANKUN__ ? '/app-react' : '/'}>
